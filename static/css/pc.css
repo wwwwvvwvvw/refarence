@@ -1,0 +1,176 @@
+@media (min-width: 601px) {
+    body {
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        line-height: 1.8;
+        color: #333;
+        background-color: rgb(241, 241, 241);;
+        margin: 0;
+        padding: 20px;
+    }
+    img{
+        max-width: 600px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .content-wrapper {
+        display: flex;
+        gap: 40px;
+    }
+
+    main {
+        flex: 1;
+        min-width: 0;
+    }
+
+    aside {
+        width: 300px;
+        top: 20px;
+        align-self: flex-start;
+    }
+
+    header {
+        background-color: #3498db;
+        color: white;
+        padding: 30px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+
+    h2 {
+        color: #3498db;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        font-size: 1.8em;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: 1.4em;
+        color: #333;
+    }
+
+    .intro, .program, .note {
+        background-color: white;
+        padding: 30px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    /* リンクのスタイル */
+    a {
+        color: #3498db;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    a:hover {
+        color: #2980b9;
+        text-decoration: underline;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+        font-size: 1.1em;
+        margin-top: 15px;
+    }
+
+    .btn:hover {
+        background-color: #2980b9;
+        color: white;
+        transform: scale(1.05);
+        text-decoration: none;
+    }
+
+    .back-link {
+        display: inline-block;
+        margin-top: 20px;
+        color: #3498db;
+        text-decoration: none;
+        font-size: 1.1em;
+        padding: 5px 10px;
+        border: 1px solid #3498db;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+        margin-bottom: 30px;
+    }
+
+    .back-link:hover {
+        background-color: #3498db;
+        color: white;
+        text-decoration: none;
+    }
+
+    /* サイドバーのスタイル */
+    .sidebar-widget {
+        background-color: white;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .sidebar-widget h3 {
+        color: #3498db;
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 1.4em;
+        font-weight: bold;
+    }
+
+    .category-list, .top-programs {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .category-list li, .top-programs li {
+        margin-bottom: 10px;
+    }
+
+    .category-list a, .top-programs a {
+        color: #333;
+        text-decoration: none;
+        font-size: 1.1em;
+    }
+
+    .category-list a:hover, .top-programs a:hover {
+        color: #3498db;
+    }
+
+    .top-programs {
+        counter-reset: top-programs-counter;
+    }
+
+    .top-programs li {
+        counter-increment: top-programs-counter;
+    }
+
+    .top-programs li::before {
+        content: counter(top-programs-counter) ". ";
+        color: #3498db;
+        font-weight: bold;
+    }
+
+    #success-ex{
+        margin-top: 100px;
+    }
+}
